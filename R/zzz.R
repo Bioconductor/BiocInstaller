@@ -71,8 +71,8 @@ globalVariables("repos")           # used in 'bootstrap' functions
 .onLoad <-
     function(libname, pkgname)
 {
-    warning("'BiocInstaller' is currently deprecated, please
-    use the 'BiocManager' CRAN package instead.")
+    .warning("\n'BiocInstaller' and 'biocLite()' are deprecated,
+        use the 'BiocManager' CRAN package instead.")
     fl <- system.file(package="BiocInstaller", "scripts",
                       "BiocInstaller.dcf")
     dcf <- read.dcf(fl)
