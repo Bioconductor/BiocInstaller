@@ -154,6 +154,7 @@ biocLite <-
              suppressAutoUpdate=FALSE,
              siteRepos=character(), ask=TRUE, ...)
 {
+    .Deprecated("BiocManager::install")
     if (missing(pkgs))   # biocLite() update w/out installing defaults
         pkgs <- pkgs[!pkgs %in% rownames(installed.packages())]
     if (!suppressAutoUpdate && !.isCurrentBiocInstaller()) {

@@ -70,7 +70,7 @@ biocLite(pkgs=c("Biobase", "IRanges", "AnnotationDbi"),
     When installing github packages, \code{...} is passed to the
     \pkg{remotes} package functions
     \code{\link[remotes]{install_github}} and
-    \code{\link[remotes]{install}}. A typical use is to build vignettes,
+    \code{install} (internally). A typical use is to build vignettes,
     via \code{dependencies=TRUE, build_vignettes=TRUE}.
 
   }
