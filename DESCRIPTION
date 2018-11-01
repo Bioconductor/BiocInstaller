@@ -2,11 +2,11 @@ Package: BiocInstaller
 Title: Install/Update Bioconductor, CRAN, and github Packages
 Description: This package is used to install and update Bioconductor,
     CRAN, and (some) github packages.
-Version: 1.32.0
+Version: 1.32.1
 Author: Dan Tenenbaum and Biocore Team
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Infrastructure
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.5.0), R (< 3.6.0)
 Suggests: remotes, RUnit, BiocGenerics
 License: Artistic-2.0
 PackageStatus: Deprecated
